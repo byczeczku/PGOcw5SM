@@ -38,4 +38,20 @@ public class MediaBiblioteczne
             System.out.println( this.tytul + " niestety zostal juz zwrocony przez kogos innego :(");
         }
     }
+
+    public void wyswietlInformacje()
+    {
+        System.out.println( "INFORMACJE O POZYCJI");
+        System.out.println( "Tytul: " + this.tytul);
+        System.out.println( "Rok wydania: " + this.rokWydania);
+
+        if( this.dostepny == true)
+        {
+            System.out.println( "Status: Dostepny");
+        }
+        else
+        {
+            System.out.println( "Status: Wypozyczony");
+        }
+    }
 }
